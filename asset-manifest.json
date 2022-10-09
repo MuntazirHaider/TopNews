@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/TopNews/static/js/main.957ebae5.js",
+    "static/js/787.4c026eef.chunk.js": "/TopNews/static/js/787.4c026eef.chunk.js",
+    "index.html": "/TopNews/index.html",
+    "main.957ebae5.js.map": "/TopNews/static/js/main.957ebae5.js.map",
+    "787.4c026eef.chunk.js.map": "/TopNews/static/js/787.4c026eef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.957ebae5.js"
+  ]
+}
