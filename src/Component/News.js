@@ -43,7 +43,7 @@ const News = (props) => {
   return (
 
     <>
-      <h2 className='my-3 text-center' style={{ margin: "35px 0px", marginTop: "90px" }}>Today's <span className="badge bg-danger">Exclusive Headlines</span></h2>
+      <h2 className='my-10 text-center' style={{ margin: "35px 0px", marginTop: "120px" }}>Today's <span className="badge bg-danger">Exclusive Headlines</span></h2>
       {loading && <Spinner />}
       <InfiniteScroll
         dataLength={articles.length}
@@ -55,7 +55,7 @@ const News = (props) => {
 
             {articles.map((e) => {
               return <div className="col-md-4" key={e.url}>
-                <NewsItem title={e.title ? e.title : ""} description={e.description ? e.description : ""} urlToImage={e.urlToImage} newsUrl={e.url} author={e.author} date={e.publishedAt} source={e.source.name} />
+                <NewsItem title={e.title ? e.title : ""} description={e.description ? e.description : ""} urlToImage={e.urlToImage ? e.urlToImage : "	https://cdn.ndtv.com/common/images/ogndtv.png"} newsUrl={e.url} author={e.author} date={e.publishedAt} source={e.source.name} />
               </div>
             })}
           </div>

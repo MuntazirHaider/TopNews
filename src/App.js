@@ -21,6 +21,7 @@ const App =()=> {
         height={3}
       />
           <Routes>
+            <Route exact path="/TopNews" element={<News setProgress={setProgress}  key="general" pageSize={pageSize} country={country} category="general" />}></Route>
             <Route exact path="/general" element={<News setProgress={setProgress}  key="general" pageSize={pageSize} country={country} category="general" />}></Route>
             <Route exact path="/business" element={<News setProgress={setProgress}  key="business" pageSize={pageSize} country={country} category="business" />}></Route>
             <Route exact path="/entertainment" element={<News setProgress={setProgress}  key="entertainment" pageSize={pageSize} country={country} category="entertainment" />}></Route>
