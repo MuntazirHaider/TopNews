@@ -1,11 +1,17 @@
 import React from 'react';
 
 const NewsItem = (props) => {
+  // receiving props
   let { title, description, urlToImage, newsUrl, author, date, source } = props;
   return (
 
     <div className="card my-4" >
-      <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{ left: '90%', zindex: '1' }}>{source}</span>
+      {/* Adding source of the news */}
+      <div style={{display:'flex',justifyContent:'flex-end',right:'0',position:'absolute'}}>
+      <span className="badge rounded-pill bg-danger">{source}</span>
+      </div>
+      
+      {/* Displpay image,title,description,date which received by props*/}
       <img src={urlToImage ? urlToImage : "	https://cdn.ndtv.com/common/images/ogndtv.png"} className="card-img-top" alt="..." />
       <div className="card-body">
         <h5 className="card-title">{title} </h5>
@@ -24,4 +30,4 @@ const NewsItem = (props) => {
 }
 
 
-export default NewsItem
+export default NewsItem;

@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
 
   return (
+
     <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-danger">
       <div className="container-fluid">
         <Link className="navbar-brand fs-3 title" to="/general">
           <strong className='fst-italic fs-1'>Top<span className="badge bg-secondary fst-italic fs-6">News</span></strong>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
+          <span className="navbar-toggler-icon"></span>
+        </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -54,6 +54,6 @@ const Navbar = () => {
       </div>
     </nav>
   )
-}
+};
 
-export default Navbar
+export default Navbar;
